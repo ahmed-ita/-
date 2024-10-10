@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url(DALL·E\ 2024-10-08\ 05.16.08\ -\ A\ dramatic\ and\ mysterious\ teaser\ image\ for\ a\ novel\ titled\ \'Puzzle\ of\ Trust\'.\ The\ image\ has\ no\ borders\ or\ edges\,\ focusing\ entirely\ on\ an\ unraveling\ thr.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+
+
+.con {
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 90vh;
+    width: 95%;
+    max-width: 1200px;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+nav {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    flex-direction: column;
+}
+
+section .text {
+    color: #fff;
+    width: 90%;
+    text-align: center;
+}
+
+section .text h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+section .text p {
+    font-size: 16px;
+}
+
+section .image {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+section .image img {
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+
+}
+
+@media (min-width: 768px) {
+    section {
+        flex-direction: row;
+    }
+
+    section .text {
+        width: 50%;
+        text-align: right;
+    }
+
+    section .image {
+        width: 50%;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 600px) {
+    body::after {
+        clip-path: circle(50% at bottom);
+    }
+
+    nav {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 10px;
+    }
+
+    section .text h1 {
+        font-size: 24px;
+    }
+
+    section .text p {
+        font-size: 14px;
+    }
+
+    section .image img {
+        max-width: 300px;
+    }
+}
